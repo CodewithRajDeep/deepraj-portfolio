@@ -373,12 +373,9 @@ left: calc(50% - 1px);
     grid-template-columns: repeat(2, 1fr);
     gap: 5.5rem;
     padding: 3rem 0;
-    background-color: var(--main-color); /* Main color for container */
-    border-radius: 3rem;
-    box-shadow: 0 0 25px var(--main-color);
 }
 
-.services-box {
+.service-box {
     background-color: var(--main-color);
     border-radius: 3rem;
     border: 5px solid transparent;
@@ -387,17 +384,16 @@ left: calc(50% - 1px);
     padding: 2rem;
     position: relative;
     overflow: hidden;
-    margin-bottom: 5rem; /* Add margin between boxes */
 }
 
-.services-box:hover {
+.service-box:hover {
     background: white;
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
 
-.services-box .service-info {
+.service-info {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -415,6 +411,83 @@ left: calc(50% - 1px);
 
 .service-info p {
     font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.project {
+    background: var(--bg-color);
+    color: black;
+    padding: 5rem 12%;
+}
+
+.project h2 {
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.5rem;
+    padding: 3rem 0;
+}
+
+.project-box {
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box:hover {
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.project-box a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1.5rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.project-info h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.project-info p {
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.7;
     margin-top: 1rem;
